@@ -31,14 +31,14 @@ const WorkoutLog = ({ onLogWorkout, exercises }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="bg-gray-800 p-6 rounded-lg shadow-md space-y-4">
       <div>
-        <label htmlFor="exercise" className="block">Exercise:</label>
+        <label htmlFor="exercise" className="block text-white mb-2">Exercise:</label>
         <select
           id="exercise"
           value={selectedExercise}
           onChange={(e) => setSelectedExercise(e.target.value)}
-          className="border p-2 rounded"
+          className="border border-gray-600 bg-gray-700 text-white p-2 rounded w-full"
         >
           <option value="">Select an exercise</option>
           {exercises.map((exercise) => (
@@ -50,39 +50,39 @@ const WorkoutLog = ({ onLogWorkout, exercises }) => {
       </div>
 
       <div>
-        <label htmlFor="sets" className="block">Sets:</label>
+        <label htmlFor="sets" className="block text-white mb-2">Sets:</label>
         <input
           type="number"
           id="sets"
           value={sets}
           onChange={(e) => setSets(e.target.value)}
-          className="border p-2 rounded"
+          className="border border-gray-600 bg-gray-700 text-white p-2 rounded w-full"
         />
       </div>
 
       <div>
-        <label htmlFor="reps" className="block">Reps:</label>
+        <label htmlFor="reps" className="block text-white mb-2">Reps:</label>
         <input
           type="number"
           id="reps"
           value={reps}
           onChange={(e) => setReps(e.target.value)}
-          className="border p-2 rounded"
+          className="border border-gray-600 bg-gray-700 text-white p-2 rounded w-full"
         />
       </div>
 
       <div>
-        <label htmlFor="weight" className="block">Weight (kg):</label>
+        <label htmlFor="weight" className="block text-white mb-2">Weight (kg):</label>
         <input
           type="number"
           id="weight"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
-          className="border p-2 rounded"
+          className="border border-gray-600 bg-gray-700 text-white p-2 rounded w-full"
         />
       </div>
 
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+      <button type="submit" className="bg-blue-600 text-white p-2 rounded hover:bg-blue-500 transition">
         Log Workout
       </button>
     </form>

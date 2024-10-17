@@ -22,23 +22,23 @@ const ExerciseSearch = ({ onSelectExercise }) => {
   };
 
   return (
-    <div>
+    <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
       <input
         type="text"
         placeholder="Search exercises..."
         value={query}
         onChange={handleSearch}
-        className="border p-2 rounded"
+        className="border border-gray-400 bg-gray-700 text-white p-2 rounded w-full focus:outline-none focus:ring focus:ring-blue-500"
       />
       <ul className="space-y-2 mt-2">
         {exercises.length > 0 ? (
           exercises.map((exercise) => (
-            <li key={exercise.id} className="border p-2 rounded" onClick={() => onSelectExercise(exercise.id)}>
+            <li key={exercise.id} className="border border-gray-600 bg-gray-700 p-2 rounded hover:bg-gray-600 transition cursor-pointer" onClick={() => onSelectExercise(exercise.id)}>
               {exercise.name}
             </li>
           ))
         ) : (
-          <li>No exercises found</li>
+          <li className="text-gray-300">No exercises found</li>
         )}
       </ul>
     </div>

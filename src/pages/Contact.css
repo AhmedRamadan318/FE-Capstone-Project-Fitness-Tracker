@@ -1,0 +1,25 @@
+
+.contact-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; 
+}
+
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin: 10px 0;
+}
+
+.contact-footer {
+    margin-top: 40px;
+}

@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 const ExerciseList = ({ exercises }) => {
     return (
-        <ul>
+        <ul className="bg-gray-800 p-4 rounded-lg shadow-md space-y-2">
             {exercises.map((exercise) => (
-                <li key={exercise.id}>
+                <li key={exercise.id} className="border border-gray-600 bg-gray-700 p-3 rounded hover:bg-gray-600 transition cursor-pointer">
                     {exercise.name}
                 </li>
             ))}

@@ -1,5 +1,9 @@
 import { Bar } from 'react-chartjs-2';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const ProgressChart = ({ workouts }) => {
   const data = {
@@ -13,6 +17,10 @@ const ProgressChart = ({ workouts }) => {
     ],
   };
 
+  useEffect(() => {
+    
+  }, [workouts]); 
+
   return (
     <div>
       <h2 className="text-xl font-bold">Progress Chart</h2>
@@ -22,7 +30,7 @@ const ProgressChart = ({ workouts }) => {
 };
 
 ProgressChart.propTypes = {
-  workouts: PropTypes.array.isRequired, 
+  workouts: PropTypes.array.isRequired,
 };
 
 export default ProgressChart;
