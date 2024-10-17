@@ -1,0 +1,28 @@
+.home-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; 
+}
+
+.home-header {
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.home-footer {
+    margin-top: 40px;
+}
