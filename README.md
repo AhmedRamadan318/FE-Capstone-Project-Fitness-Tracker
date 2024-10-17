@@ -16,3 +16,15 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/AhmedRamadan318/FE-Capstone-Project-Fitness-Tracker.git
 
+## Technologies Used
+React: JavaScript library for building user interfaces.
+Vite: Next-generation front-end tooling for development.
+Chart.js: Library for creating charts to visualize data.
+
+## Future Improvements
+🌗 Dark and Light Mode: Add a toggle to switch between dark and light themes.
+🌍 Multi-Language Support: Translate the app into different languages.
+📅 Enhanced Workout History: Add features to edit or delete logged workouts.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
